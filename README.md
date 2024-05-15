@@ -1,13 +1,13 @@
 # UEFI-FTP
-Python-based FTP client to upload and download
+Python-based FTP client to upload and download recursive
 
-# FTP File Uploader
+# FTP File Uploader and download
 
-This Python script automates the process of uploading files from a local directory to an FTP server.
+This Python script automates downloading/uploading files to/from a local directory to an FTP server. One is based on the "glob library" and the other is "oswalk" library. To begin testing either module, Python support must first be added to the EFI shell, as both modules are native to Python.
 
 ## Description
 
-The FTP File Uploader script traverses through a local directory, uploads files to the specified FTP server, and creates directory structures as needed.
+The FTP File script traverses a local directory, uploads files to the specified FTP server, and creates directory structures as needed.
 
 ## Features
 
@@ -19,20 +19,16 @@ The FTP File Uploader script traverses through a local directory, uploads files 
 
 1. Clone the repository:
 
-    ```bash
-    git clone https://github.com/your_username/ftp-file-uploader.git
-    ```
+  
 
 2. Navigate to the project directory:
 
-    ```bash
-    cd ftp-file-uploader
-    ```
+   
 
 3. Install the required dependencies (if any):
 
     ```bash
-    pip install -r requirements.txt
+    Does not require any external library
     ```
 
 ## Usage
@@ -42,7 +38,9 @@ The FTP File Uploader script traverses through a local directory, uploads files 
 3. Run the script:
 
     ```bash
-    python upload_files.py
+    python3 ftp-glob.py
+    python3 ftp-oswalk.py
+    
     ```
 
 4. Follow the on-screen instructions to monitor the upload process.
