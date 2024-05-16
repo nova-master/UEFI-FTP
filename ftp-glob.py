@@ -15,6 +15,8 @@ ftp_server = ftplib.FTP(HOSTNAME, USERNAME, PASSWORD)
 ftp_server.encoding = "utf-8"
 
 
+########### upload to server  #############
+
 
 # Function to recursively create directory structure
 
@@ -76,6 +78,9 @@ def upload_files_to_ftp(ftp_server):
     
 
 upload_files_to_ftp(ftp_server)
+
+
+########### download from server  #############
 
 try:
 
