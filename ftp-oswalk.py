@@ -16,14 +16,9 @@ ftp_server.encoding = "utf-8"
 
 
 ftp_server.dir()
-print("VVVVV")
-path = os.getcwd() 
-dir_list = os.listdir(path) 
-   
-print("Files and directories in '", path, "' :")  
-   
-# print the list 
-print(dir_list)
+
+
+########   upload to server   ########## 
 
 # Function to recursively create directory structure
 def create_directory_structure(ftp, path):
@@ -81,40 +76,7 @@ upload_files_to_ftp(ftp_server)
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            
+########   Download from server   ##########  
 
 
 try:
